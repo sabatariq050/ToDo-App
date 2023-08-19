@@ -1,0 +1,20 @@
+{% extends 'base2.html' %}
+{% block title %}
+      Register Todo App
+    {% endblock title %}
+{% block register %}   
+    <form method="POST" class="container mt-5" style="width: 350px; height:fit-content;margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5;">
+      <h3 style="text-align: center;" class="mt-3">Create an account</h3>  
+      <div class="mb-3  mt-5" >
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="floatingInputValue" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password"  name="password"class="form-control" id="exampleInputPassword1">
+        </div>
+        <p class="mt-3">Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+      </div>
+        <button type="submit" class="btn btn-primary btn-dark mb-3"  style="margin: auto; display: block;"\>Sign Up</button>
+      </form>
+{% endblock register %}

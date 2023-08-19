@@ -1,8 +1,8 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% block update %}
     
 
-<form class="container" style="margin-top: 50px;" action="/update/{{todo.sno}}" method="POST">
+<form class="container" style="margin-top: 50px;" action="/update/{{todo.id}}" method="POST">
     <h2>Update Your Todo </h2>
     <div class="mb-3">
       <label for="title" class="form-label">Todo Title</label>
